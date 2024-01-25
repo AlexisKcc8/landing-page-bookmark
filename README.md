@@ -25,6 +25,9 @@ Users should be able to:
   - The email address is not formatted correctly
 
 ### Screenshot
+Version Móbile
+![Bookmark Hero Mobile](https://github.com/AlexisKcc8/landing-page-bookmark/assets/75916617/b1e27292-8a36-40e8-8f77-cff90a491f81)
+
 
 ### Links
 
