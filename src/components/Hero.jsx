@@ -6,7 +6,7 @@ export const Hero = () => {
       <article className="relative flex justify-center overflow-hidden px-4">
         <img
           className="relative z-10 "
-          src="/public/images/illustration-hero.svg"
+          src="/images/illustration-hero.svg"
           alt="illustration-hero"
         />
         <div className="w-[100%] h-[75%] absolute bottom-0 right-[-18%]  ">
