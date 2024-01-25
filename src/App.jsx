@@ -1,11 +1,34 @@
+import { Features } from "./components/Features";
+import { Hero } from "./components/Hero";
 import { Navbar } from "./components/Navbar";
 
 function App() {
   return (
     <>
       <Navbar />
-      <main>
-        <h2>Mis demas componentes</h2>
+      <main className="bg-white ">
+        <Hero />
+        <Features />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </main>
     </>
   );

@@ -8,12 +8,16 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed  w-full ${
-        isToggle ? "min-h-15" : "min-h-full bg-[#2e344e]"
-      } overflow-hidden opacity-80 transition duration-700 ease-in lg:flex `}
+      className={`fixed top-0 left-0  w-full ${
+        isToggle ? "min-h-15" : "min-h-full bg-[#2e344e] opacity-90"
+      } overflow-hidden  transition duration-700 ease-in lg:flex z-50`}
       ref={refContainerNabvar}
     >
-      <div className="flex justify-around  py-6">
+      <div
+        className={`flex justify-around  py-6 ${
+          isToggle ? "bg-white" : "bg-[#2e344e]"
+        } opacity-85 transition duration-700 ease-in`}
+      >
         {isToggle ? (
           <LogoBookmark />
         ) : (
