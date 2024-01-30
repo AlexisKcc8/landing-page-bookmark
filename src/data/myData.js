@@ -41,3 +41,27 @@ export let features = {
     },
   ],
 };
+
+export let extensions = [
+  {
+    id: "id-chrome",
+    srcImg: "/images/logo-chrome.svg",
+    altImg: "logo-chrome",
+    title: "Add to Chrome",
+    version: "Minimum version 62",
+  },
+  {
+    id: "id-firefox",
+    srcImg: "/images/logo-firefox.svg",
+    altImg: "logo-firefox",
+    title: "Add to firefox",
+    version: " Minimum version 55",
+  },
+  {
+    id: "id-opera",
+    srcImg: "/images/logo-opera.svg",
+    altImg: "logo-opera",
+    title: "Add to Opera",
+    version: "Minimum version 46",
+  },
+];

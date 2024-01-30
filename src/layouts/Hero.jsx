@@ -1,4 +1,4 @@
-import { LayerBook } from "./LayerBook";
+import { LayerBook } from "../components/LayerBook";
 
 export const Hero = () => {
   return (

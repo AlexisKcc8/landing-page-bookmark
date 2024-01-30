@@ -1,6 +1,6 @@
 import { useToggleNabvar } from "../hooks/useToggleNabvar";
-import { ButtonImg } from "./ButtonImg";
-import { LogoBookmark } from "./LogoBookmark";
+import { ButtonImg } from "../components/ButtonImg";
+import { LogoBookmark } from "../components/LogoBookmark";
 
 export const Navbar = () => {
   const { toggleMenu, refBtnToggle, refContainerNabvar, isToggle } =

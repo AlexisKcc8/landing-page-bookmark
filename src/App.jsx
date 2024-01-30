@@ -1,6 +1,7 @@
-import { Features } from "./components/Features";
-import { Hero } from "./components/Hero";
-import { Navbar } from "./components/Navbar";
+import { Download } from "./layouts/Download";
+import { Features } from "./layouts/Features";
+import { Hero } from "./layouts/Hero";
+import { Navbar } from "./layouts/Navbar";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main className="bg-white ">
         <Hero />
         <Features />
+        <Download />
         <br />
         <br />
         <br />

@@ -1,19 +1,20 @@
-import { useEffect, useRef } from "react";
 import { features } from "../data/myData";
-import { ItemSlide } from "./ItemSlide";
+import { ItemSlide } from "../components/ItemSlide";
+import { ItemLinkSlide } from "../components/ItemLinkSlide";
+import { useEffect, useRef } from "react";
 
 export const Features = () => {
-  const itemButton = useRef([]);
   const { itemsButton, itemsSlide } = features;
+  const refItemButton = useRef([]);
   useEffect(() => {
-    itemButton.current[0].classList.add("before:border-b-4");
+    refItemButton.current[0].classList.add("before:border-b-4");
   }, []);
 
   const getRefItem = (index) => {
-    itemButton.current.forEach((item) =>
+    refItemButton.current.forEach((item) =>
       item.classList.remove("before:border-b-4")
     );
-    itemButton.current[index].classList.toggle("before:border-b-4");
+    refItemButton.current[index].classList.toggle("before:border-b-4");
   };
 
   return (
@@ -29,20 +30,13 @@ export const Features = () => {
       </p>
       <ul className="w-full px-5">
         {itemsButton.map((item, index) => (
-          <li
+          <ItemLinkSlide
             key={item.title}
-            id={item.url}
-            ref={(el) => (itemButton.current[index] = el)}
-            className="w-full border border-gray-300 border-x-0 border-t-0 text-blue-darker  font-semibold relative inline-block first:border-t-2 before:block before:absolute before:-inset-0 before:w-[40%] before:mx-auto before:border-pink-500"
-          >
-            <a
-              href={item.url}
-              className="relative block p-4"
-              onClick={() => getRefItem(index)}
-            >
-              {item.title}
-            </a>
-          </li>
+            itemButton={item}
+            myIndex={index}
+            refItemButton={refItemButton}
+            getRefItem={getRefItem}
+          />
         ))}
       </ul>
 
