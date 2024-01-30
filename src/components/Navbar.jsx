@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0  w-full ${
+      className={`fixed top-0 left-0  w-full scroll-mt-32 ${
         isToggle ? "min-h-15" : "min-h-full bg-[#2e344e] opacity-90"
       } overflow-hidden  transition duration-700 ease-in lg:flex z-50`}
       ref={refContainerNabvar}
