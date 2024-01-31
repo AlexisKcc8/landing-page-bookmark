@@ -1,3 +1,4 @@
+import { ContactUs } from "./layouts/ContactUs.JSX";
 import { Download } from "./layouts/Download";
 import { Features } from "./layouts/Features";
 import { FrequentlyAsked } from "./layouts/FrequentlyAsked";
@@ -13,6 +14,7 @@ function App() {
         <Features />
         <Download />
         <FrequentlyAsked />
+        <ContactUs />
         <br />
         <br />
         <br />
