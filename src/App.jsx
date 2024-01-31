@@ -1,5 +1,6 @@
 import { Download } from "./layouts/Download";
 import { Features } from "./layouts/Features";
+import { FrequentlyAsked } from "./layouts/FrequentlyAsked";
 import { Hero } from "./layouts/Hero";
 import { Navbar } from "./layouts/Navbar";
 
@@ -11,16 +12,7 @@ function App() {
         <Hero />
         <Features />
         <Download />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <FrequentlyAsked />
         <br />
         <br />
         <br />
