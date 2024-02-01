@@ -1,10 +1,12 @@
 export const CardExtension = (props) => {
-  const { extension } = props;
+  const { extension, index } = props;
 
   const { id, srcImg, altImg, title, version } = extension;
 
+  let example = index * 5;
+  console.log(index);
   return (
-    <div className=" w-[80%] h-[25rem] flex flex-col shadow-xl">
+    <div className={`w-[80%] h-[25rem] flex flex-col shadow-xl `}>
       <div className="bg-white flex flex-col justify-center items-center grow">
         <figure>
           <img src={srcImg} alt={altImg} />

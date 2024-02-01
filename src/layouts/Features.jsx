@@ -20,31 +20,35 @@ export const Features = () => {
   return (
     <section
       id="features"
-      className="min-h-screen flex flex-col justify-start items-center text-center "
+      className="flex flex-col justify-start items-center text-center "
     >
-      <h2 className="font-bold text-2xl text-blue-darker mt-16">Features</h2>
-      <p className="my-6 px-5 text-gray-500">
-        Our aim is to make it quick and easy for you to access your favourite
-        websites. Your bookmarks sync between your devices so you can access
-        them on the go.
-      </p>
-      <ul className="w-full px-5">
-        {itemsButton.map((item, index) => (
-          <ItemLinkSlide
-            key={item.title}
-            itemButton={item}
-            myIndex={index}
-            refItemButton={refItemButton}
-            getRefItem={getRefItem}
-          />
-        ))}
-      </ul>
+      <div className="lg:w-[80%] lg:flex lg:flex-col lg:justify-center lg:items-center">
+        <h2 className="font-bold text-2xl text-blue-darker mt-16 lg:text-[2.2rem]">
+          Features
+        </h2>
+        <p className="my-6 px-5 text-gray-500 lg:w-[55%] lg:text-[1.3rem]">
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+        <ul className="w-full px-5 lg:flex lg:justify-center lg:w-[70%]">
+          {itemsButton.map((item, index) => (
+            <ItemLinkSlide
+              key={item.title}
+              itemButton={item}
+              myIndex={index}
+              refItemButton={refItemButton}
+              getRefItem={getRefItem}
+            />
+          ))}
+        </ul>
 
-      <ul className="w-full h-[75vh] overflow-hidden my-12 relative">
-        {itemsSlide.map((item) => (
-          <ItemSlide key={item.idSlide} dataFeatures={item} />
-        ))}
-      </ul>
+        <ul className="w-full h-[65vh] overflow-hidden my-12 relative lg:h-[35vh] bg-red-500">
+          {itemsSlide.map((item) => (
+            <ItemSlide key={item.idSlide} dataFeatures={item} />
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };
