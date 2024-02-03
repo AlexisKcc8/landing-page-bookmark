@@ -2,7 +2,7 @@ import { LayerBook } from "../components/LayerBook";
 
 export const Hero = () => {
   return (
-    <section className="flex flex-col justify-center items-center  mt-24  lg:flex-row  lg:relative">
+    <section className="flex flex-col justify-center items-center  mt-24  lg:flex-row  lg:relative lg:overflow-hidden">
       <div className="lg:flex lg:w-[80%] overflow-hidden">
         <article className="relative lg:static  flex justify-center overflow-hidden px-4 lg:order-2 lg:w-[50%] ">
           <img

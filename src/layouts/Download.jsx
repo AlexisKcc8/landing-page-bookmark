@@ -7,11 +7,11 @@ export const Download = () => {
       className="lg:flex lg:justify-center lg:items-center"
     >
       <div className="lg:w-[80%]">
-        <article className="text-center">
+        <article className="text-center flex flex-col items-center">
           <h2 className="font-bold text-2xl text-blue-darker mb-3">
             Download the extension
           </h2>
-          <p className="px-5 text-gray-500 mb-8">
+          <p className="px-5 text-gray-500 mb-8 lg:w-[60%] lg:text-[1.3rem]">
             We’ve got more browsers in the pipeline. Please do let us know if
             you’ve got a favourite you’d like us to prioritize.
           </p>

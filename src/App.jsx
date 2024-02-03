@@ -9,7 +9,7 @@ import { Navbar } from "./layouts/Navbar";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className="bg-white ">
         <Hero />
         <Features />
