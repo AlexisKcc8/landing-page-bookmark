@@ -1,3 +1,18 @@
+export let linksNavbar = [
+  {
+    href: "#section-features",
+    title: "FEATURES",
+  },
+  {
+    href: "#section-download",
+    title: "PRICING",
+  },
+  {
+    href: "#section-contact",
+    title: "CONTACT",
+  },
+];
+
 export let features = {
   itemsButton: [
     {

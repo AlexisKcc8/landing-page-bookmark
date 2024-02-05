@@ -3,8 +3,8 @@ import { extensions } from "../data/myData";
 export const Download = () => {
   return (
     <section
-      id="download"
-      className="lg:flex lg:justify-center lg:items-center"
+      id="section-download"
+      className=" scroll-mt-20 lg:flex lg:justify-center lg:items-center"
     >
       <div className="lg:w-[80%]">
         <article className="text-center flex flex-col items-center">

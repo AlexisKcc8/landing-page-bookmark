@@ -20,8 +20,8 @@ export const Features = () => {
 
   return (
     <section
-      id="features"
-      className="flex flex-col justify-start items-center text-center lg:relative "
+      id="section-features"
+      className="scroll-mt-20 flex flex-col justify-start items-center text-center lg:relative "
     >
       <div className="lg:w-[80%] lg:flex lg:flex-col lg:justify-center lg:items-center">
         <h2 className="font-bold text-2xl text-blue-darker mt-16 lg:text-3xl">

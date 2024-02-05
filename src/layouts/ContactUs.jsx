@@ -1,8 +1,8 @@
 export const ContactUs = () => {
   return (
     <section
-      id="contacUs"
-      className="bg-blue-light mt-16 text-center text-white px-8 py-14 lg:flex lg:justify-center lg:items-center"
+      id="section-contact"
+      className="scroll-mt-20 bg-blue-light mt-16 text-center text-white px-8 py-14 lg:flex lg:justify-center lg:items-center"
     >
       <div className="lg:w-[30%]">
         <span className=" text-sm uppercase tracking-[.25em]">
