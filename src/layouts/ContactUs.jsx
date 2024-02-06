@@ -32,7 +32,7 @@ export const ContactUs = () => {
 
           <button
             type="submit"
-            className="bg-[#fb5859] w-full p-4 rounded-lg font-bold mt-4 lg:mt-0 lg:w-[30%]"
+            className="bg-[#fb5859] w-full p-4 rounded-lg font-bold mt-4 lg:mt-0 lg:w-[30%] hover:bg-white hover:text-[#fb5859] hover:border-[#fb5859] hover:border-[1px]"
           >
             Contact Us
           </button>

@@ -10,17 +10,26 @@ export const Navbar = () => {
     <header
       className={`fixed top-0 left-0  w-full ${
         isToggle ? "h-screen bg-[#2e344e]" : "h-[4.5rem] bg-white"
-      }   overflow-hidden transition duration-700 ease-in  lg:flex lg:justify-center z-50  opacity-85 cursor-pointer `}
+      }   overflow-hidden transition duration-700 ease-in  lg:flex lg:justify-center z-50  opacity-85 cursor-pointer lg:h-[4.5rem] lg:bg-white`}
     >
-      <div className="lg:w-[80%] h-full flex flex-col lg:justify-between lg:items-center ">
+      <div className="lg:w-[80%] h-full flex flex-col lg:flex-row lg:justify-between lg:items-center ">
         <div
-          className={`flex justify-around flex-grow-0  py-6  opacity-85 transition duration-700 ease-in `}
+          className={`flex justify-around flex-grow-0  py-6  opacity-85 transition duration-700 ease-in lg:flex-grow-1 lg:w-[50%] lg:justify-start`}
         >
-          {isToggle ? (
-            <LogoBookmark fillText="#FFF" bgIcon="#242A45" fillCircle="#FFF" />
-          ) : (
+          <div className="hidden lg:block">
             <LogoBookmark />
-          )}
+          </div>
+          <div className="lg:hidden">
+            {isToggle ? (
+              <LogoBookmark
+                fillText="#FFF"
+                bgIcon="#242A45"
+                fillCircle="#FFF"
+              />
+            ) : (
+              <LogoBookmark />
+            )}
+          </div>
 
           <div className="lg:hidden">
             {isToggle ? (
@@ -42,15 +51,15 @@ export const Navbar = () => {
         </div>
 
         <nav
-          className={`w-full  text-white flex flex-col flex-grow  lg:text-black lg:flex-row `}
+          className={`w-full  text-white flex flex-col flex-grow  lg:text-black lg:flex-row lg:w-[50%]`}
         >
-          <ul className="h-full px-8 flex flex-col justify-between text-center ">
-            <div className="">
+          <ul className="w-full h-full px-8 text-center">
+            <div className="lg:flex lg:justify-end">
               {linksNavbar.map((link) => (
-                <li key={link.href} className="">
+                <li key={link.href} className="lg:mx-4">
                   <a
                     onClick={toggleMenu}
-                    className=" block w-full p-3 border border-y-2 border-[#464c66] border-x-0"
+                    className=" block w-full p-3 border border-y-2 border-[#464c66] border-x-0 lg:border-0 hover:text-red-400"
                     href={link.href}
                   >
                     {link.title}
@@ -59,7 +68,7 @@ export const Navbar = () => {
               ))}
 
               <li>
-                <button className="w-full p-3  border-2 border-white mt-6 rounded-md lg:bg-red-600">
+                <button className="w-full p-3  border-2 border-white mt-6 rounded-md lg:bg-red-600 lg:text-white lg:mt-0 lg:mr-8 hover:bg-white hover:text-red-400 hover:border-red-400">
                   LOGIN
                 </button>
               </li>

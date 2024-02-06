@@ -11,17 +11,26 @@ export const Footer = () => {
 
           <ul className="text-white lg:flex lg:flex-row lg:gap-8">
             <li className="mb-5 lg:mb-0">
-              <a href="#" className=" font-semibold uppercase">
+              <a
+                href="#"
+                className=" font-semibold uppercase hover:text-red-400"
+              >
                 Features
               </a>
             </li>
             <li className="mb-5 lg:mb-0">
-              <a href="#" className=" font-semibold uppercase">
+              <a
+                href="#"
+                className=" font-semibold uppercase hover:text-red-400"
+              >
                 Pricing
               </a>
             </li>
             <li className="mb-5 lg:mb-0">
-              <a href="#" className=" font-semibold uppercase">
+              <a
+                href="#"
+                className=" font-semibold uppercase hover:text-red-400"
+              >
                 Contact
               </a>
             </li>
@@ -29,8 +38,16 @@ export const Footer = () => {
         </section>
 
         <section className="w-full flex justify-center items-center gap-8 mt-5 lg:mt-0 lg:justify-end">
-          <img src="/images/icon-facebook.svg" alt="icon-facebook" />
-          <img src="/images/icon-twitter.svg" alt="icon-twitter" />
+          <img
+            className="hover:text-red-400 hover:cursor-pointer"
+            src="/images/icon-facebook.svg"
+            alt="icon-facebook"
+          />
+          <img
+            className="hover:text-red-400 hover:cursor-pointer"
+            src="/images/icon-twitter.svg"
+            alt="icon-twitter"
+          />
         </section>
       </div>
     </footer>

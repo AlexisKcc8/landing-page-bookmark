@@ -26,10 +26,10 @@ export const Hero = () => {
           </p>
 
           <div className=" flex justify-center lg:justify-start gap-3">
-            <button className="bg-blue-light text-white px-3 py-4 rounded-md font-medium shadow-xl">
+            <button className="bg-blue-light text-white px-3 py-4 rounded-md font-medium shadow-xl hover:bg-white hover:border-blue-light hover:border-2 hover:text-blue-light">
               Get it on Chrome
             </button>
-            <button className="bg-white rounded-md text-gray-600 px-3 py-4 font-medium shadow-xl">
+            <button className="bg-white rounded-md text-gray-600 px-3 py-4 font-medium shadow-xl hover:border-gray-600 hover:border-2">
               Get it on Firefox
             </button>
           </div>
