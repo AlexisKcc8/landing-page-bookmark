@@ -1,4 +1,4 @@
-import { ContactUs } from "./layouts/ContactUs.JSX";
+import { Contact } from "./layouts/Contact";
 import { Download } from "./layouts/Download";
 import { Features } from "./layouts/Features";
 import { Footer } from "./layouts/Footer";
@@ -15,7 +15,7 @@ function App() {
         <Features />
         <Download />
         <FrequentlyAsked />
-        <ContactUs />
+        <Contact />
         <Footer />
       </main>
     </>

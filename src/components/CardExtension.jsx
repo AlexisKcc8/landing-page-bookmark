@@ -5,8 +5,8 @@ export const CardExtension = (props) => {
 
   return (
     <div
-      className={`w-[80%] h-[25rem] flex flex-col shadow-xl ${
-        index > 0 ? `mt-[${(index * 5).toString()}rem]` : ``
+      className={`w-[80%] h-[25rem] flex flex-col shadow-2xl ${
+        index == 1 ? " lg:mt-[5rem]" : index >= 2 ? "lg:mt-[10rem]" : ""
       }`}
     >
       <div className="bg-white flex flex-col justify-center items-center grow">

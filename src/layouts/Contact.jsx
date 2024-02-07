@@ -1,4 +1,4 @@
-export const ContactUs = () => {
+export const Contact = () => {
   return (
     <section
       id="section-contact"
