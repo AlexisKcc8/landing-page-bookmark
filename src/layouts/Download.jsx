@@ -9,9 +9,9 @@ export const Download = () => {
   return (
     <section
       id="section-download"
-      className=" scroll-mt-20 lg:flex lg:justify-center lg:items-center"
+      className=" scroll-mt-20 lg:flex lg:justify-center lg:items-center overflow-hidden"
     >
-      <div className="lg:w-[80%]">
+      <div className="lg:w-[80%] overflow-hidden py-8">
         <InView {...options}>
           {({ inView, ref }) => (
             <article
@@ -36,24 +36,18 @@ export const Download = () => {
             </article>
           )}
         </InView>
-        <InView {...options}>
-          {({ inView, ref }) => (
-            <article
-              ref={ref}
-              className={`flex flex-col justify-center items-center gap-8 lg:flex-row animate__animated ${
-                inView ? "animate__lightSpeedInRight" : ""
-              }`}
-            >
-              {extensions.map((extension, index) => (
-                <CardExtension
-                  key={extension.id}
-                  index={index}
-                  extension={extension}
-                />
-              ))}
-            </article>
-          )}
-        </InView>
+
+        <article
+          className={`flex flex-col justify-center items-center gap-8 lg:flex-row `}
+        >
+          {extensions.map((extension, index) => (
+            <CardExtension
+              key={extension.id}
+              index={index}
+              extension={extension}
+            />
+          ))}
+        </article>
       </div>
     </section>
   );

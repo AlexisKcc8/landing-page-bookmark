@@ -7,7 +7,7 @@ export const FrequentlyAsked = () => {
     triggerOnce: true, // La función inView se activará una sola vez
   };
   return (
-    <section className=" mt-28 px-6 lg:flex lg:justify-center lg:items-center">
+    <section className="mt-16 px-6 lg:flex lg:justify-center lg:items-center overflow-hidden">
       <div className="lg:w-[40%]">
         <InView {...options}>
           {({ inView, ref }) => (

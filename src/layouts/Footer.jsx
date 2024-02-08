@@ -2,14 +2,18 @@ import { InView } from "react-intersection-observer";
 import { LogoBookmark } from "../components/LogoBookmark";
 
 export const Footer = () => {
+  const options = {
+    triggerOnce: true, // La función inView se activará una sola vez
+    threshold: 0,
+  };
   return (
-    <footer className=" bg-blue-darker flex flex-col justify-center items-center px-16 py-8 lg:px-0">
-      <InView>
+    <footer className=" bg-blue-darker flex flex-col justify-center items-center px-16 py-8 overflow-hidden lg:px-0">
+      <InView {...options}>
         {({ inView, ref }) => (
           <div ref={ref} className="lg:w-[80%] lg:flex lg:justify-center ">
             <section
               className={`w-full flex flex-col justify-center items-center lg:flex-row lg:justify-start animate__animated ${
-                inView ? "animate__fadeIn" : ""
+                inView ? "animate__bounceIn" : ""
               }`}
             >
               <div className="mb-5 lg:mb-0 lg:mr-8">
@@ -46,7 +50,7 @@ export const Footer = () => {
 
             <section
               className={`w-full flex justify-center items-center gap-8 mt-5 lg:mt-0 lg:justify-end animate__animated ${
-                inView ? "animate__fadeIn" : ""
+                inView ? "animate__bounceIn" : ""
               }`}
             >
               <img

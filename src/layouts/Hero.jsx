@@ -10,7 +10,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center  mt-24  lg:flex-row  lg:relative lg:overflow-hidden h-screen">
+    <section className="flex flex-col justify-center items-center  mt-24  lg:flex-row  lg:relative overflow-hidden h-screen">
       <div className="lg:flex lg:w-[80%] overflow-hidden">
         <InView {...options}>
           {({ inView, ref }) => (

@@ -24,9 +24,9 @@ export const Features = () => {
   return (
     <section
       id="section-features"
-      className="scroll-mt-20 flex flex-col justify-start items-center text-center lg:relative "
+      className="scroll-mt-20 flex flex-col justify-start items-center overflow-hidden text-center lg:relative "
     >
-      <div className="lg:w-[80%] lg:flex lg:flex-col lg:justify-center lg:items-center">
+      <div className=" lg:w-[80%] lg:flex lg:flex-col lg:justify-center lg:items-center">
         <InView {...options}>
           {({ inView, ref }) => (
             <div
@@ -34,7 +34,7 @@ export const Features = () => {
               className=" lg:flex lg:flex-col lg:justify-center lg:items-center"
             >
               <h2
-                className={`font-bold text-2xl text-blue-darker mt-16 lg:text-3xl animate__animated ${
+                className={`font-bold text-2xl text-blue-darker  lg:text-3xl animate__animated ${
                   inView ? "animate__bounceIn" : ""
                 }`}
               >
@@ -75,7 +75,7 @@ export const Features = () => {
 
         <InView {...options}>
           {({ inView, ref }) => (
-            <div className={`relative w-full h-[30rem] mt-[2rem] mb-[8rem] `}>
+            <div className={`relative w-full h-[30rem] my-[2rem]  `}>
               <ul
                 ref={ref}
                 className={`w-full h-full animate__animated ${

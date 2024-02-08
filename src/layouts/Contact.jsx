@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <section
       id="section-contact"
-      className="scroll-mt-20 bg-blue-light mt-16 text-center text-white px-8 py-14 lg:flex lg:justify-center lg:items-center"
+      className="scroll-mt-20 bg-blue-light mt-16 text-center text-white px-8 py-14 overflow-hidden lg:flex lg:justify-center lg:items-center"
     >
       <div className="lg:w-[30%]">
         <InView {...options}>
