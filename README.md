@@ -28,6 +28,9 @@ Users should be able to:
 Version Móbile
 ![Bookmark Hero Mobile](https://github.com/AlexisKcc8/landing-page-bookmark/assets/75916617/b1e27292-8a36-40e8-8f77-cff90a491f81)
 
+Version Desktop
+![Captura de pantalla 2024-02-08 092836](https://github.com/AlexisKcc8/landing-page-bookmark/assets/75916617/1b27212f-5028-46d3-b190-f13c4a25f6c9)
+
 
 ### Links
 
@@ -39,11 +42,11 @@ Version Móbile
 ### Built with
 
 - Semantic HTML5 markup
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Tailwindcss](https://tailwindcss.com/) - Framework CSS
+- [react-intersection-observer](https://www.npmjs.com/package/react-intersection-observer?activeTab=readme) - NPM Library
+- [Animate.css](https://animate.style/) - Library of animations CSS
 
 ## Author
 
