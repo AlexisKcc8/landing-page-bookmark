@@ -19,7 +19,7 @@ export const Hero = () => {
               className="relative lg:static  flex justify-center overflow-hidden px-4 lg:order-2 lg:w-[50%] "
             >
               <img
-                className={`relative z-10 animate__animated ${
+                className={`relative z-10 animate__animated  ${
                   inView ? "animate__lightSpeedInRight" : ""
                 }`}
                 src="/images/illustration-hero.svg"

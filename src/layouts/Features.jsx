@@ -26,7 +26,7 @@ export const Features = () => {
       id="section-features"
       className="scroll-mt-20 flex flex-col justify-start items-center overflow-hidden text-center lg:relative "
     >
-      <div className=" lg:w-[80%] lg:flex lg:flex-col lg:justify-center lg:items-center">
+      <div className=" lg:w-[100%] relative lg:flex lg:flex-col lg:justify-center lg:items-center">
         <InView {...options}>
           {({ inView, ref }) => (
             <div
@@ -73,22 +73,22 @@ export const Features = () => {
           )}
         </InView>
 
-        <InView {...options}>
-          {({ inView, ref }) => (
-            <div className={`relative w-full h-[30rem] my-[2rem]  `}>
+        <div className="relative w-full h-[32rem] mt-4 overflow-hidden ">
+          <InView {...options}>
+            {({ inView, ref }) => (
               <ul
                 ref={ref}
-                className={`w-full h-full animate__animated ${
-                  inView ? "animate__lightSpeedInLeft" : ""
+                className={` w-full h-full animate__animated ${
+                  inView ? "animate__bounceInLeft" : ""
                 }`}
               >
                 {itemsSlide.map((item) => (
                   <ItemSlide key={item.idSlide} dataFeatures={item} />
                 ))}
               </ul>
-            </div>
-          )}
-        </InView>
+            )}
+          </InView>
+        </div>
       </div>
     </section>
   );
